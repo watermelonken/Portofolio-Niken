@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niken Aisyi Meyca | Ken</title>
+
+    <link rel="icon" type="image/png" href="images/logo2.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+    <div class="wrapper">
+
+        <div class="logo">
+            <img src="images/logo2.png" alt="Logo">
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#">MY ACTIVITIES</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<header>
+
+    <div class="header-opacity"></div>
+
+    <div class="header-jumbotron">
+
+        <div class="content reveal">
+            <h4 id="typing"></h4>
+
+            <h5>
+                Hello everynyan, I'm Ken!<br>
+                I'm a student at MAN 1 MODEL BNA
+            </h5>
+
+            <p>INFJ | 1w2 | Multifandom</p>
+
+            <!-- tombol scroll ke about -->
+            <a href="#about" class="button-xl">Get to know me better!</a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= ABOUT ME ================= -->
+
+<section id="about" class="about reveal">
+
+    <div class="wrapper">
+
+        <h2>About Me</h2>
+
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <p id="aboutTyping"></p>
+
+            </div>
+
+
+            <div class="about-image">
+                <img src="images/profile.jpg" alt="My Photo">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REVEAL ANIMATION ================= -->
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+    let reveals = document.querySelectorAll(".reveal");
+
+    for(let i = 0; i < reveals.length; i++){
+
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 150;
+
+        if(elementTop < windowHeight - elementVisible){
+            reveals[i].classList.add("active");
+        }
+
+    }
+
+});
+
+</script>
+
+
+<!-- ================= JAVASCRIPT FILE ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

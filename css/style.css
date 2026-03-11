@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ================= GENERAL ================= */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-size:16px;
+    font-family:"Oswald", sans-serif;
+}
+
+.wrapper{
+    max-width:1024px;
+    width:90%;
+    margin:auto;
+    padding:20px 0;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    background-color:#680f0c;
+    color:#f8f7a5;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav .wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:1.2rem;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    height:80px;
+}
+
+.menu{
+    width:50%;
+}
+
+.menu ul{
+    display:flex;
+    justify-content:space-between;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.menu ul li a{
+    text-decoration:none;
+    color:#FFC26F;
+    position:relative;
+    transition:0.3s;
+}
+
+.menu ul li a:hover{
+    color:#ffd27f;
+    transform:scale(1.05);
+}
+
+.menu ul li a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    left:50%;
+    bottom:-5px;
+    background:#FFC26F;
+    transition:0.3s;
+}
+
+.menu ul li a:hover::after{
+    width:100%;
+    left:0;
+}
+
+/* ================= HERO ================= */
+
+header{
+    background:url("../images/bg-header4.jpeg");
+    height:100vh;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:relative;
+    font-family:"Lobster Two", sans-serif;
+    text-shadow:0 0 6px #884A39;
+}
+
+.header-opacity{
+    background:#411002;
+    width:100%;
+    height:100%;
+    opacity:0.7;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.header-jumbotron{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    animation:fadeIn 1.5s ease-in-out;
+}
+
+.header-jumbotron h4{
+    color:#f1ffb4;
+    font-size:2rem;
+    margin:0;
+}
+
+.header-jumbotron h5{
+    color:#FFC26F;
+    letter-spacing:2px;
+    margin:0;
+    padding:5px;
+    font-size:3.5rem;
+    line-height:4rem;
+    text-transform:uppercase;
+    font-family:"Roboto Condensed", sans-serif;
+}
+
+.header-jumbotron p{
+    margin:0 5px 20px 5px;
+    padding:5px;
+    color:#f1ffb4;
+}
+
+/* ================= BUTTON ================= */
+
+.button-xl{
+    background:#680f0c;
+    color:#FFC26F;
+    padding:20px;
+    border-radius:6px;
+    font-family:"Roboto Condensed", sans-serif;
+    font-size:1.4rem;
+    text-decoration:none;
+    transition:all 0.3s ease;
+}
+
+.button-xl:hover{
+    transform:scale(1.08);
+    background:#a30000;
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================= SCROLL REVEAL ================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all 1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about{
+    background:#fdf2e6;
+    padding:80px 0;
+}
+
+.about h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+    color:#680f0c;
+}
+
+.about-content{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+.about-text{
+    flex:1;
+    font-size:1.1rem;
+    line-height:1.8rem;
+}
+
+.about-image{
+    flex:1;
+    text-align:center;
+}
+
+.about-image img{
+    width:250px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.about{
+    background-image:url("../images/bg-header2.jpg");
+    background-size:cover;
+    background-position:center;
+    padding:80px 0;
+}
