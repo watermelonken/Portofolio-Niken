@@ -400,3 +400,60 @@ transition:1.5s ease;
 .skill-bar{
 backdrop-filter:blur(4px);
 }
+
+/* ================= MY ACTIVITIES ================= */
+
+.activities{
+    padding:80px 0;
+    background:#f79a8a;
+    text-align:center;
+}
+
+.activities h2{
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#680f0c;
+}
+
+.activities-container{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.activity-card{
+    background:rgb(235, 255, 146);
+    width:260px;
+    padding:30px 20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.activity-card:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+.activity-icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.activity-card h3{
+    margin-bottom:10px;
+    color:#680f0c;
+}
+
+.activity-card p{
+    font-size:0.95rem;
+    line-height:1.6rem;
+}
+
+.activity-icon img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
