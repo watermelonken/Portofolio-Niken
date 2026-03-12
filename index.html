@@ -2,34 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niken Aisyi Meyca | Ken</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="images/logo2.png">
-    <link rel="stylesheet" href="css/style.css">
+<title>Niken Aisyi Meyca | Ken</title>
+
+<link rel="icon" type="image/png" href="images/logo2.png">
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
+<!-- ================= BACKGROUND STARS ================= -->
+
+<div class="stars"></div>
+
 <!-- ================= NAVBAR ================= -->
 
 <nav>
-    <div class="wrapper">
 
-        <div class="logo">
-            <img src="images/logo2.png" alt="Logo">
-        </div>
+<div class="wrapper">
 
-        <div class="menu">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#">MY ACTIVITIES</a></li>
-            </ul>
-        </div>
+<div class="logo">
+<img src="images/logo2.png" alt="Logo">
+</div>
 
-    </div>
+<div class="menu">
+<ul>
+
+<li><a href="#">HOME</a></li>
+<li><a href="#about">ABOUT ME</a></li>
+<li><a href="#">MY ACTIVITIES</a></li>
+
+</ul>
+</div>
+
+</div>
+
 </nav>
 
 
@@ -37,84 +47,136 @@
 
 <header>
 
-    <div class="header-opacity"></div>
+<div class="stars"></div>
+<div class="shooting-stars"></div>
 
-    <div class="header-jumbotron">
+<div class="stars-back">
+<div class="stars-small"></div>
+<div class="stars-medium"></div>
+<div class="stars-large"></div>
+</div>
 
-        <div class="content reveal">
-            <h4 id="typing"></h4>
+<div class="header-opacity"></div>
 
-            <h5>
-                Hello everynyan, I'm Ken!<br>
-                I'm a student at MAN 1 MODEL BNA
-            </h5>
+<div class="header-jumbotron">
 
-            <p>INFJ | 1w2 | Multifandom</p>
+<div class="content reveal">
 
-            <!-- tombol scroll ke about -->
-            <a href="#about" class="button-xl">Get to know me better!</a>
+<h4 id="typing"></h4>
 
-        </div>
+<h5>
+Hello everynyan, I'm Ken! <br>
+I'm a student at MAN 1 MODEL BNA
+</h5>
 
-    </div>
+<p>INFJ | 1w2 | Multifandom</p>
+
+<a href="#about" class="button-xl">
+Get to know me better!
+</a>
+
+</div>
+
+</div>
 
 </header>
 
 
 <!-- ================= ABOUT ME ================= -->
 
-<section id="about" class="about reveal">
+<section id="about" class="about">
 
-    <div class="wrapper">
+<div class="wrapper">
 
-        <h2>About Me</h2>
+<h2 class="reveal">Niken Aisyi Meyca</h2>
+<p class="reveal">Student | Artist | Multifandom</p>
 
-        <div class="about-content">
+<div class="about-content">
 
-            <div class="about-text">
+<div class="about-text reveal">
 
-                <p id="aboutTyping"></p>
+<p id="aboutTyping"></p>
 
-            </div>
+<h3>My Skills</h3>
 
+<div class="skill">
 
-            <div class="about-image">
-                <img src="images/profile.jpg" alt="My Photo">
-            </div>
+<p>Drawing Traditionally</p>
+<div class="skill-bar">
+<div class="skill-fill drawing"></div>
+</div>
 
-        </div>
+<p>Digital Art</p>
+<div class="skill-bar">
+<div class="skill-fill digital"></div>
+</div>
 
-    </div>
+<p>Writing Story</p>
+<div class="skill-bar">
+<div class="skill-fill writing"></div>
+</div>
+
+<p>Imagination</p>
+<div class="skill-bar">
+<div class="skill-fill imagination"></div>
+</div>
+
+<p>Singing</p>
+<div class="skill-bar">
+<div class="skill-fill singing"></div>
+</div>
+
+<p>Painting</p>
+<div class="skill-bar">
+<div class="skill-fill painting"></div>
+</div>
+
+</div>
+
+</div>
+
+<div class="about-image reveal">
+<img src="images/profile-saya.png" alt="My Photo">
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- ================= REVEAL ANIMATION ================= -->
+<!-- ================= SCROLL REVEAL SCRIPT ================= -->
 
 <script>
 
-window.addEventListener("scroll", function(){
+function reveal(){
 
-    let reveals = document.querySelectorAll(".reveal");
+const reveals = document.querySelectorAll(".reveal");
 
-    for(let i = 0; i < reveals.length; i++){
+for(let i = 0; i < reveals.length; i++){
 
-        let windowHeight = window.innerHeight;
-        let elementTop = reveals[i].getBoundingClientRect().top;
-        let elementVisible = 150;
+let windowHeight = window.innerHeight;
+let elementTop = reveals[i].getBoundingClientRect().top;
 
-        if(elementTop < windowHeight - elementVisible){
-            reveals[i].classList.add("active");
-        }
+let elementVisible = 120;
 
-    }
+if(elementTop < windowHeight - elementVisible){
 
-});
+reveals[i].classList.add("active");
+
+}
+
+}
+
+}
+
+window.addEventListener("scroll", reveal);
 
 </script>
 
 
-<!-- ================= JAVASCRIPT FILE ================= -->
+<!-- ================= MAIN JS ================= -->
 
 <script src="script.js"></script>
 
