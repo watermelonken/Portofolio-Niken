@@ -378,3 +378,17 @@ aboutText = currentLang === "en" ? aboutTextEN : aboutTextID;
 typeAbout();
 
 });
+
+// ================= LOADER =================
+
+window.addEventListener("load", function(){
+
+const loader = document.getElementById("loader");
+
+loader.classList.add("loader-hide");
+
+setTimeout(function(){
+loader.style.display = "none";
+},600);
+
+});
