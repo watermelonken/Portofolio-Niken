@@ -16,11 +16,9 @@
 
 <body>
 
-<!-- ================= BACKGROUND STARS ================= -->
-
 <div class="stars"></div>
 
-<!-- ================= NAVBAR ================= -->
+<!-- NAVBAR -->
 
 <nav>
 
@@ -33,9 +31,11 @@
 <div class="menu">
 <ul>
 
-<li><a href="#">HOME</a></li>
-<li><a href="#about">ABOUT ME</a></li>
-<li><a href="#activities">MY ACTIVITIES</a></li>
+<li><a href="#" data-id="navHome">HOME</a></li>
+<li><a href="#about" data-id="navAbout">ABOUT ME</a></li>
+<li><a href="#activities" data-id="navActivities">MY ACTIVITIES</a></li>
+
+<button id="translateBtn">ID / EN</button>
 
 </ul>
 </div>
@@ -44,8 +44,7 @@
 
 </nav>
 
-
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 
 <header>
 
@@ -66,14 +65,14 @@
 
 <h4 id="typing"></h4>
 
-<h5>
+<h5 data-id="heroTitle">
 Hello everynyan, I'm Ken! <br>
 I'm a student at MAN 1 MODEL BNA
 </h5>
 
-<p>INFJ | 1w2 | Multifandom</p>
+<p data-id="heroInfo">INFJ | 1w2 | Multifandom</p>
 
-<a href="#about" class="button-xl">
+<a href="#about" class="button-xl" data-id="heroButton">
 Get to know me better!
 </a>
 
@@ -83,15 +82,14 @@ Get to know me better!
 
 </header>
 
-
-<!-- ================= ABOUT ME ================= -->
+<!-- ABOUT -->
 
 <section id="about" class="about">
 
 <div class="wrapper">
 
-<h2 class="reveal">Niken Aisyi Meyca</h2>
-<p class="reveal">Student | Artist | Multifandom</p>
+<h2 class="reveal" data-id="aboutName">Niken Aisyi Meyca</h2>
+<p class="reveal" data-id="aboutRole">Student | Artist | Multifandom</p>
 
 <div class="about-content">
 
@@ -99,39 +97,27 @@ Get to know me better!
 
 <p id="aboutTyping"></p>
 
-<h3>My Skills</h3>
+<h3 data-id="skillsTitle">My Skills</h3>
 
 <div class="skill">
 
-<p>Drawing Traditionally</p>
-<div class="skill-bar">
-<div class="skill-fill drawing"></div>
-</div>
+<p data-id="skill1">Drawing Traditionally</p>
+<div class="skill-bar"><div class="skill-fill drawing"></div></div>
 
-<p>Digital Art</p>
-<div class="skill-bar">
-<div class="skill-fill digital"></div>
-</div>
+<p data-id="skill2">Digital Art</p>
+<div class="skill-bar"><div class="skill-fill digital"></div></div>
 
-<p>Writing Story</p>
-<div class="skill-bar">
-<div class="skill-fill writing"></div>
-</div>
+<p data-id="skill3">Writing Story</p>
+<div class="skill-bar"><div class="skill-fill writing"></div></div>
 
-<p>Imagination</p>
-<div class="skill-bar">
-<div class="skill-fill imagination"></div>
-</div>
+<p data-id="skill4">Imagination</p>
+<div class="skill-bar"><div class="skill-fill imagination"></div></div>
 
-<p>Singing</p>
-<div class="skill-bar">
-<div class="skill-fill singing"></div>
-</div>
+<p data-id="skill5">Singing</p>
+<div class="skill-bar"><div class="skill-fill singing"></div></div>
 
-<p>Painting</p>
-<div class="skill-bar">
-<div class="skill-fill painting"></div>
-</div>
+<p data-id="skill6">Painting</p>
+<div class="skill-bar"><div class="skill-fill painting"></div></div>
 
 </div>
 
@@ -147,129 +133,137 @@ Get to know me better!
 
 </section>
 
-<!-- ================= MY ACTIVITIES ================= -->
+<!-- ACTIVITIES -->
 
 <section id="activities" class="activities reveal">
 
-    <div class="wrapper">
+<div class="wrapper">
 
-        <h2>My Activities</h2>
+<h2 data-id="activitiesTitle">My Activities</h2>
 
-        <div class="activities-container">
+<div class="activities-container">
 
-            <!-- CARD 1 -->
-            <div class="activity-card">
+<div class="activity-card">
 
-                <div class="activity-icon">
-    <img src="images/ipad drawing.jpg" alt="Drawing">
+<div class="activity-icon">
+<img src="images/ipad drawing.jpg" alt="Drawing">
 </div>
 
-                <h3>Drawing</h3>
+<h3 data-id="act1Title">Drawing</h3>
 
-                <p>
-                    Even though I prefer digital art but I draw both traditionally and digitally.
-                    Drawing helps me express my imagination and creativity.
-                </p>
+<p data-id="act1Desc">
+Even though I prefer digital art but I draw both traditionally and digitally.
+Drawing helps me express my imagination and creativity.
+</p>
 
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="activity-card">
-
-                <div class="activity-icon">
-    <img src="images/Fight club.jpg" alt="Movies">
 </div>
 
-                <h3>Watching Movies</h3>
+<div class="activity-card">
 
-                <p>
-                    Watching movies is one of my favorite ways to relax.
-                    I enjoy alternative genres and stories especially western movies.
-                </p>
-
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="activity-card reveal">
-
-                <div class="activity-icon">
-    <img src="images/4 days left….jpg" alt="Fandom">
+<div class="activity-icon">
+<img src="images/Fight club.jpg" alt="Movies">
 </div>
 
-                <h3>Fandom</h3>
+<h3 data-id="act2Title">Watching Movies</h3>
 
-                <p>
-                    I really love exploring different fandoms, characters,
-                    and stories that inspire my creativity.
-                </p>
+<p data-id="act2Desc">
+Watching movies is one of my favorite ways to relax.
+I enjoy alternative genres and stories especially western movies.
+</p>
 
-            </div>
+</div>
 
-        </div>
+<div class="activity-card reveal">
 
-    </div>
+<div class="activity-icon">
+<img src="images/4 days left….jpg" alt="Fandom">
+</div>
+
+<h3 data-id="act3Title">Fandom</h3>
+
+<p data-id="act3Desc">
+I really love exploring different fandoms, characters,
+and stories that inspire my creativity.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
+<!-- PROJECTS -->
 
-<!-- ================= SCROLL REVEAL SCRIPT ================= -->
+<section class="projects reveal" id="projects">
 
-<script>
+<div class="wrapper">
 
-function reveal(){
+<h2 data-id="projectsTitle">My Projects & Works</h2>
 
-const reveals = document.querySelectorAll(".reveal");
+<div class="projects-container">
 
-for(let i = 0; i < reveals.length; i++){
+<div class="project-card">
+<img src="images/ditys-5.png">
+<h3 data-id="proj1Title">DTIYS Challenge</h3>
+<p data-id="proj1Desc">
+I redraw other artists' characters using my own art style.
+</p>
+</div>
 
-let windowHeight = window.innerHeight;
-let elementTop = reveals[i].getBoundingClientRect().top;
+<div class="project-card">
+<img src="images/dtiys.png">
+<h3 data-id="proj2Title">Character Redraw</h3>
+<p data-id="proj2Desc">
+I interpret characters from other artists in my personal style.
+</p>
+</div>
 
-let elementVisible = 120;
+<div class="project-card">
+<img src="images/higher than the sky.png">
+<h3 data-id="proj3Title">Original Character</h3>
+<p data-id="proj3Desc">
+I design my own original characters using digital illustration.
+</p>
+</div>
 
-if(elementTop < windowHeight - elementVisible){
+</div>
 
-reveals[i].classList.add("active");
+</div>
 
-}
-
-}
-
-}
-
-window.addEventListener("scroll", reveal);
-
-</script>
-
-
-<!-- ================= MAIN JS ================= -->
+</section>
 
 <script src="script.js"></script>
 
-<!-- ================= FOOTER ================= -->
-
 <footer>
 
-    <div class="wrapper footer-content">
+<div class="wrapper footer-content">
 
-        <div class="footer-left">
-            <h3>Niken Aisyi Meyca</h3>
-            <p>Student | Artist | Multifandom</p>
-        </div>
+<div class="footer-left">
+<h3 data-id="footerName">Niken Aisyi Meyca</h3>
+<p data-id="footerDesc">Student | Artist | Multifandom</p>
+</div>
 
-        <div class="footer-right">
+<div class="footer-right">
 
-    <div class="footer-social">
-        <a href="https://instagram.com/naeykean" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-    </div>
+<div class="footer-social">
+<a href="https://instagram.com/naeykean" target="_blank">@naeykean
+<i class="fa-brands fa-instagram"></i>
+</a>
+</div>
 
-    <p>© 2026 Ken Portfolio</p>
+<p>© 2026 Ken Portfolio</p>
+
+</div>
 
 </div>
 
 </footer>
+
+<div id="imageModal" class="image-modal">
+<img id="modalImg">
+</div>
 
 </body>
 </html>
